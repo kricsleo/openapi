@@ -10,7 +10,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  const path = req.url!.replace('/api', '')
+  const path = req.url!.replace('/api/unsplash', '')
   const result = await fetchUnspash(path)
   res.status(200).json(result)
 }
