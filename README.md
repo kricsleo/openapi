@@ -1,7 +1,3 @@
-# Random API Service
+# Random Service
 
-## Random Image
-
-> All images are provided by [Unsplash](https://unsplash.com/) 💖
-
-**WIP**
+**[WIP]**
