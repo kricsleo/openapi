@@ -4,16 +4,13 @@ import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Random Service',
+      title: 'Open API',
       "meta": [
-        {
-          name: "viewport",
-          content: "width=device-width, initial-scale=1"
-        },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
         { charset: "utf-8" }
       ],
       link: [
-        { rel: 'icon', href: '/favicon.svg' }
+        { rel: 'icon', href: '/favicon.png' }
       ],
     }
   },
