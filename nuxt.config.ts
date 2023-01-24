@@ -14,6 +14,9 @@ export default defineNuxtConfig({
       ],
     }
   },
+  routeRules: {
+    '/**': { cors: true }
+  },
   modules: [
     '@unocss/nuxt',
     '@nuxt/content'
