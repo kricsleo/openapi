@@ -4,10 +4,12 @@ export default defineEventHandler(event => {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Headers': '*',
     'Access-Control-Expose-Headers': '*',
+    'Access-Control-Max-Age': '31536000',
   })
-  if (getHeader(event, 'method') === 'OPTIONS') {
-    event.node.res.statusCode = 204
-    event.node.res.statusMessage = 'No Content.'
-    return 'OK'
+
+  if (getMethod(event) === 'OPTIONS') {
+    event.node.res.statusCode = 200
+    event.node.res.statusMessage = 'OK'
+    return ''
   }
 })
