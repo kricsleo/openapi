@@ -14,12 +14,16 @@ export default defineNuxtConfig({
       ],
     }
   },
+
   routeRules: {
     '/**': { cors: true }
   },
+
   modules: [
     '@unocss/nuxt',
     '@nuxt/content'
   ],
+
   components: false,
+  compatibilityDate: '2024-12-29',
 })
