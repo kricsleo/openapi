@@ -7,7 +7,7 @@ export default defineEventHandler(async event => {
     data: {
       id: query.userId,
       firstName: 'Leo',
-      LastName: 'Krics',
+      lastName: 'Krics',
     }
   }
 })
